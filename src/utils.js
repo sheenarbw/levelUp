@@ -214,6 +214,7 @@ function updateDom(data){
     document.getElementById(domData.id).innerHTML = `
     <h2>${excercise.name}</h2>
     ${excercise.description && `<p>${excercise.description}</p>` || ''}
+    ${excercise.url && `<p><a href="${excercise.url}">${excercise.url}</a></p>` || ''}
     ${renderTags(excercise.tags)}
     <button type="button" class="btn btn-primary" onclick="getRandomExcercise()" >Random Excercise</button>
     `
