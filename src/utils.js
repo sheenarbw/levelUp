@@ -1,121 +1,56 @@
 var domData = {
     id: null,
-    data:{excercise: null}}
+    data:{exercise: null}}
 
 const PIANO = "piano"
 const GUITAR = "guitar"
-const excercises = [
+const exercises = [
+
     {
-        name: "Lick n Riff @ 50 bpm",
-        weight: 5,
-        tags: [GUITAR]
+        name: "Lick n Riff",
+        tags: [GUITAR],
+        weight: 2
     },
     {
         name: "that 6th trick",
-        weight: 5,
-        tags: [GUITAR]
+        tags: [GUITAR],
+        weight: 2
     },
     {
-        name: "string bending",
-        tags: [GUITAR]
-    },
-    {
-        name: "Blues Licks in pattern 1",
-        weight: 3,
-        tags: [GUITAR]
-    },
-    {
-        name: "Chord change: F - Am @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Chord change: F - C @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Chord change: F - D @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Chord change: F - E @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Chord change: F - G @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Open C major scale @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "Open G major scale @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-    },
-    {
-        name: "A Minor pentatonic scale @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
+        name: "vari shuffle climb",
+        tags: [GUITAR],
+        weight: 2
 
     },
     {
-        name: "find all A notes @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
+        name: "lick n riff",
+        tags: [GUITAR],
+        weight: 2
 
     },
     {
-        name: "find all B notes @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
+        name: "tore up a sidestep",
+        tags: [GUITAR],
+        weight: 2
 
     },
     {
-        name: "find all C notes @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
+        name: "about that base",
+        tags: [GUITAR],
+        weight: 2
 
     },
     {
-        name: "find all D notes @ 50 bpm",
-        weight: 2,
+        name: "Song: Lenard Cohen - Hallelujah",
         tags: [GUITAR]
-
-    },
-    {
-        name: "find all E notes @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-
-    },
-    {
-        name: "find all F notes @ 50 bpm",
-        weight: 2,
-        tags: [GUITAR]
-
-    },
-    {
-        name: "Song: Lenard Cohen - Hallelulja",
-        tags: [GUITAR]
-
     },
     {
         name: "Song: The Shins - pink bullets",
         tags: [GUITAR]
-
     },
     {
         name: "Song: Metallica - Enter Sandman",
-        weight: 0,
         tags: [GUITAR]
-
     },
     {
         name: "Song: counting Crows - Mr Jones",
@@ -131,75 +66,111 @@ const excercises = [
     },
     {
         name: "Song: Neil Young - Hey Hey My My",
-        weight: 0,
         tags: [GUITAR]
     },
     {
         name: "Song: Otis Redding - Sitting on the dock of the Bay",
         tags: [GUITAR]
     },
-    {
-        name: "Song: Tracey Chapmin - Fast Car",
-        weight: 0,
-        tags: [GUITAR]
-    },
-    {
-        name: "C major scale - both hands together @50bpm",
-        tags: [PIANO],
-        description: "make sure pressure is even, things should be at the same volume and same duration"
-    },
-    {
-        name: "C major scale claw excercise",
-        description: "Start with G and C chort, then move up and up one semitone at a time",
-        tags:[PIANO],
-        url: "https://youtu.be/g4G8VQ194sc?t=354"
-    },
-    {
-        name: "C major scale broken claw excercise",
-        tags:[PIANO],
-        url: "https://youtu.be/g4G8VQ194sc?t=431",
-        description: "just play 1,3,5 then shift then 1,3,5"
-    },
-    {
-        name: "C major scale - both hands together @50bpm, build to climax",
-        tags: [PIANO],
-        description: "as we progress, make it louder. As we scale back make it softer"
-    },
-    {
-        name: "C major scale - one hand duration long, the other hand duration short @50bpm",
-        tags: [PIANO],
-        description: "make sure pressure is even, things should be at the same volume and different duration",
-        weight: 0
-    },
-    {
-        name: "C major scale - one hand plays quarter notes, the other hand plays half notes",
-        tags: [PIANO],
-        description: "same notes but double the speed",
-        weight: 0
-    },
-    {
-        name: "G major scale - both hands together @50bpm",
-        tags: [PIANO],
-        description: "make sure pressure is even, things should be at the same volume and same duration"
-    }
+
+    // {
+    //     name: "string bending",
+    //     tags: [GUITAR]
+    // },
+    // {
+    //     name: "Blues Licks in pattern 1",
+    //     weight: 3,
+    //     tags: [GUITAR]
+    // },
+    // {
+    //     name: "Open C major scale @ 50 bpm",
+    //     weight: 2,
+    //     tags: [GUITAR]
+    // },
+    // {
+    //     name: "Open G major scale @ 50 bpm",
+    //     weight: 2,
+    //     tags: [GUITAR]
+    // },
+    // {
+    //     name: "A Minor pentatonic scale @ 50 bpm",
+    //     weight: 2,
+    //     tags: [GUITAR]
+
+    // },
+
+    // {
+    //     name: "find all E notes @ 50 bpm",
+    //     weight: 2,
+    //     tags: [GUITAR]
+
+    // },
+
+
+    // {
+    //     name: "Song: Tracey Chapmin - Fast Car",
+    //     weight: 0,
+    //     tags: [GUITAR]
+    // },
+    // {
+    //     name: "C major scale - both hands together @50bpm",
+    //     tags: [PIANO],
+    //     description: "make sure pressure is even, things should be at the same volume and same duration"
+    // },
+    // {
+    //     name: "C major scale claw exercise",
+    //     description: "Start with G and C chort, then move up and up one semitone at a time",
+    //     tags:[PIANO],
+    //     url: "https://youtu.be/g4G8VQ194sc?t=354"
+    // },
+    // {
+    //     name: "C major scale broken claw exercise",
+    //     tags:[PIANO],
+    //     url: "https://youtu.be/g4G8VQ194sc?t=431",
+    //     description: "just play 1,3,5 then shift then 1,3,5"
+    // },
+    // {
+    //     name: "C major scale - both hands together @50bpm, build to climax",
+    //     tags: [PIANO],
+    //     description: "as we progress, make it louder. As we scale back make it softer"
+    // },
+    // {
+    //     name: "C major scale - one hand duration long, the other hand duration short @50bpm",
+    //     tags: [PIANO],
+    //     description: "make sure pressure is even, things should be at the same volume and different duration",
+    //     weight: 0
+    // },
+    // {
+    //     name: "C major scale - one hand plays quarter notes, the other hand plays half notes",
+    //     tags: [PIANO],
+    //     description: "same notes but double the speed",
+    //     weight: 0
+    // },
+    // {
+    //     name: "G major scale - both hands together @50bpm",
+    //     tags: [PIANO],
+    //     description: "make sure pressure is even, things should be at the same volume and same duration",
+    //     weight: 0
+
+    // }
 ]
 
-function getExpandedExcercises(){
+function getExpandedExercises(){
     let ret = []
-    for (let excercise of excercises){
-        let weight = excercise.weight
+    for (let exercise of exercises){
+        let weight = exercise.weight
         if (weight === undefined) weight = 1
 
         for (let i=0; i<weight; i++)
-            ret.push(excercise)
+            ret.push(exercise)
     }
     return ret
 }
 
-function getRandomExcercise() {
-    const expandedExcercises = getExpandedExcercises()
-    var excercise = expandedExcercises[Math.floor(Math.random() * expandedExcercises.length)];
-    updateDom({excercise})
+function getRandomExercise() {
+    const expandedExercises = getExpandedExercises()
+    var exercise = expandedExercises[Math.floor(Math.random() * expandedExercises.length)];
+    updateDom({exercise})
 }
 
 function renderTags(tags){
@@ -210,13 +181,13 @@ function renderTags(tags){
 
 function updateDom(data){
     domData.data = {...domData.data, ...data}
-    const excercise = domData.data.excercise;
+    const exercise = domData.data.exercise;
     document.getElementById(domData.id).innerHTML = `
-    <h2>${excercise.name}</h2>
-    ${excercise.description && `<p>${excercise.description}</p>` || ''}
-    ${excercise.url && `<p><a href="${excercise.url}">${excercise.url}</a></p>` || ''}
-    ${renderTags(excercise.tags)}
-    <button type="button" class="btn btn-primary" onclick="getRandomExcercise()" >Random Excercise</button>
+    <h2>${exercise.name}</h2>
+    ${exercise.description && `<p>${exercise.description}</p>` || ''}
+    ${exercise.url && `<p><a href="${exercise.url}">${exercise.url}</a></p>` || ''}
+    ${renderTags(exercise.tags)}
+    <button type="button" class="btn btn-primary" onclick="getRandomExercise()" >Random Exercise</button>
     `
 }
 
