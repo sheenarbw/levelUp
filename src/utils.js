@@ -2,20 +2,62 @@ var domData = {
     id: null,
     data:{exercise: null}}
 
-const PIANO = "piano"
+const PIANO  = "piano"
 const GUITAR = "guitar"
-const BLUES = "blues"
+const BLUES  = "blues studies"
 
 const exercises = [
     {
-        name: "improvise",
+        name: "Jam with phone",
         tags: [GUITAR],
-        weight: 2
+        weight: 3
+    },
+    {
+        name: "E major and minor shape barre changes (pick a song, find the chords as barr or just go up and down)",
+        tags: [GUITAR],
+        weight: 1
+    },
+    {
+        name: "E dominant 7th shape barre changes (pick a song, find the chords as barr or just go up and down)",
+        tags: [GUITAR],
+        weight: 0
+    },
+    {
+        name: "A major and minor shape barre changes (pick a song, find the chords as barre or just go up and down)",
+        tags: [GUITAR],
+        weight: 1
+    },
+    {
+        name: "Triad: FAC",
+        tags: [GUITAR],
+        weight: 1
+    },
+    {
+        name: "Triad: GBD",
+        tags: [GUITAR],
+        weight: 1
+    },
+    {
+        name: "Triad: CEG",
+        tags: [GUITAR],
+        weight: 1
+    },
+    {
+        name: "E and A major and minor shape barre changes (pick a song, find the chords as barre)",
+        tags: [GUITAR],
+        weight: 0
+    },
+    {
+        name: "free improvisation",
+        tags: [GUITAR],
+        weight: 3
     },
     {
         name: "Lick n Riff",
         tags: [GUITAR,BLUES],
-        weight: 2
+        weight: 2,
+    //     url: "https://youtu.be/g4G8VQ194sc?t=354"
+
     },
     {
         name: "that 6th trick",
@@ -78,31 +120,27 @@ const exercises = [
         tags: [GUITAR]
     },
 
-    // {
-    //     name: "string bending",
-    //     tags: [GUITAR]
-    // },
-    // {
-    //     name: "Blues Licks in pattern 1",
-    //     weight: 3,
-    //     tags: [GUITAR]
-    // },
-    // {
-    //     name: "Open C major scale @ 50 bpm",
-    //     weight: 2,
-    //     tags: [GUITAR]
-    // },
-    // {
-    //     name: "Open G major scale @ 50 bpm",
-    //     weight: 2,
-    //     tags: [GUITAR]
-    // },
-    // {
-    //     name: "A Minor pentatonic scale @ 50 bpm",
-    //     weight: 2,
-    //     tags: [GUITAR]
 
-    // },
+    {
+        name: "Blues Licks in pattern 1",
+        weight: 3,
+        tags: [GUITAR]
+    },
+    {
+        name: "Open C major scale @ 50 bpm",
+        weight: 1,
+        tags: [GUITAR]
+    },
+    {
+        name: "Open G major scale @ 50 bpm",
+        weight: 1,
+        tags: [GUITAR]
+    },
+    {
+        name: "A Minor pentatonic scale @ 50 bpm",
+        weight: 1,
+        tags: [GUITAR]
+    },
 
     // {
     //     name: "find all E notes @ 50 bpm",
