@@ -4,41 +4,46 @@ var domData = {
 
 const PIANO = "piano"
 const GUITAR = "guitar"
-const exercises = [
+const BLUES = "blues"
 
+const exercises = [
+    {
+        name: "improvise",
+        tags: [GUITAR],
+        weight: 2
+    },
     {
         name: "Lick n Riff",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
     },
     {
         name: "that 6th trick",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
     },
     {
         name: "vari shuffle climb",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
 
     },
     {
         name: "lick n riff",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
 
     },
     {
         name: "tore up a sidestep",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
 
     },
     {
         name: "about that base",
-        tags: [GUITAR],
+        tags: [GUITAR,BLUES],
         weight: 2
-
     },
     {
         name: "Song: Lenard Cohen - Hallelujah",
